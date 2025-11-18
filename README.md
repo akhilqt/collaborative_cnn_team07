@@ -4,11 +4,6 @@ This repository implements a collaborative image classification project using Co
 
 ## Team & Datasets
 
-- **User 1**: Animals dataset (Kaggle, Anto Benedetti)  
-  - Task: classify 5 mammal categories.
-
-
-
 Each user trains a separate CNN model on their own dataset, and then we cross-test the models on the *other* dataset without sharing any raw images.
 
 ## Folder Structure
