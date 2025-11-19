@@ -21,6 +21,11 @@ https://github.com/Saikat-rpr/cnn1/pull/2
 
 These links show the full collaborative workflow.
 
+Grad-CAM visualizations for both models are available in:
+  - `results/gradcam_v1_animals/`
+  - `results/gradcam_v2/`
+
+
 ---
 
 ## 2. Tasks Completed by Each User
@@ -58,6 +63,8 @@ cnn1/
     metrics_v2.json
     test_v1_user2.json
     test_v2_user1.json
+    gradcan_v1_animals
+    gradcam_v2
   utils/
     metrics.py
     prepare_user2_plants.py
@@ -65,7 +72,6 @@ cnn1/
   README.md
   requirements.txt
 ```
-
 
 ---
 
