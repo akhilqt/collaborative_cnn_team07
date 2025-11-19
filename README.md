@@ -43,13 +43,27 @@ These links show the full collaborative workflow.
 
 ## 3. Repository Structure
 
-models/
-notebooks/
-results/
-utils/
-README.md
-report.md
-requirements.txt
+cnn1/
+  models/
+    model_v1.py
+    model_v2.py
+  notebooks/
+    train_v1.py
+    train_v2.py
+    test_v1_user2.py
+    test_v2_user1.py
+  results/
+    metrics_v1.json
+    metrics_v2.json
+    test_v1_user2.json
+    test_v2_user1.json
+  utils/
+    metrics.py
+    prepare_user2_plants.py
+  report.md
+  README.md
+  requirements.txt
+
 
 ---
 
