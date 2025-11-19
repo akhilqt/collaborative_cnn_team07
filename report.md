@@ -66,7 +66,7 @@ Implemented in `models/model_v1.py`:
 
 Trained only on the animal dataset.
 
-### 3.2 Model v2 – Deeper CNN for PlantVillage (User 2)
+### 3.2 Model v2 – SimpleCNNv2 for PlantVillage (User 2)
 
 Implemented in `models/model_v2.py`:
 
@@ -143,6 +143,8 @@ Cross-testing:
 | model_v2      | PlantVillage    | Animals        | ≈ 0.20   |
 
 Domain shift causes large performance drops.
+
+We additionally generated Grad-CAM visualizations to inspect what regions the models focus on (see results/gradcam_* folders in the repository).
 
 ---
 
