@@ -43,7 +43,7 @@ if __name__ == "__main__":
     dataset = datasets.ImageFolder(test_dir, transform=tf)
     loader = DataLoader(dataset, batch_size=32, shuffle=False)
 
-    num_classes = len(dataset.classes)  # should be 5: cat, dog, elephant, horse, lion
+    num_classes = len(dataset.classes)  
     print("Classes:", dataset.classes)
 
     model = SimpleCNNv2(num_classes=num_classes).to(device)
