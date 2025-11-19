@@ -2,13 +2,13 @@
 
 ## 1. Introduction
 
-This mini project was designed to practise both convolutional neural network (CNN) training and Git/GitHub collaboration. Two users worked on related image classification tasks using different datasets and separate models. Instead of sharing raw data, only trained models and evaluation metrics were exchanged. This report summarises the datasets, models, training setup, and cross-dataset evaluation results.
+This mini project was designed to practise both convolutional neural network (CNN) training and GitHub collaboration. Two users worked on related image classification tasks using different datasets and separate models. Instead of sharing raw data, only trained models and evaluation metrics were exchanged. This report summarises the datasets, models, training setup and cross-dataset evaluation results.
 
 ---
 
 ## 2. Datasets
 
-### 2.1 User 1 – Animals Dataset
+### 2.1 User 1 – Animals Dataset - https://www.kaggle.com/datasets/antobenedetti/animals
 
 User 1 used an Animals dataset with five classes:
 
@@ -29,7 +29,7 @@ data/user1_animals/
 
 The test set has only a few images per class, so single errors affect accuracy strongly.
 
-### 2.2 User 2 – PlantVillage Subset
+### 2.2 User 2 – PlantVillage Subset - https://www.kaggle.com/datasets/emmarex/plantdisease
 
 User 2 used a 5-class subset of the PlantVillage dataset:
 
@@ -47,8 +47,6 @@ data/user2_plants/
   val/<5 classes>/
   test/<5 classes>/
 ```
-
-PlantVillage images are visually very different from the animal dataset (close-up leaves with uniform backgrounds).
 
 ---
 
@@ -183,8 +181,8 @@ Small test size in the animal dataset also makes results sensitive to single mis
 This project combined CNN-based classification with collaborative GitHub workflows.  
 Model v1 and model v2 were trained on animal and plant datasets respectively, then cross-evaluated. Results show:
 
-- strong performance on own datasets  
+- average-to-strong performance on own datasets  
 - very limited transfer to other domains  
 
-The project also practised using branches, pull requests, and clear repository organisation.
+The project also practised using branches, pull requests and clear repository organisation.
 
