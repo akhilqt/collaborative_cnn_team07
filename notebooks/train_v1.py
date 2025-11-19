@@ -21,7 +21,7 @@ def get_dataloaders(data_root: str, batch_size: int = 32):
       data_root/test/<class>/
     """
 
-    # Standard ImageNet-like transforms
+    
     train_transforms = transforms.Compose([
         transforms.Resize((256, 256)),
         transforms.RandomResizedCrop(224),
@@ -134,7 +134,7 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
 
-    # Data
+    
     train_loader, val_loader, test_loader, class_names = get_dataloaders(
         data_root=args.data_root,
         batch_size=args.batch_size
@@ -142,7 +142,7 @@ def main():
     num_classes = len(class_names)
     print(f"Detected {num_classes} classes: {class_names}")
 
-    # Model, loss, optimizer
+    
     model = SimpleCNN(num_classes=num_classes).to(device)
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(
@@ -187,13 +187,13 @@ def main():
             f"  Val   loss: {val_loss:.4f} | Val   acc: {val_acc:.4f}"
         )
 
-        # Keep best val accuracy model
+        
         if val_acc > best_val_acc:
             best_val_acc = val_acc
             torch.save(model.state_dict(), args.model_out)
             print(f"  >> Saved best model to {args.model_out}")
 
-    # Load best model for test evaluation
+    
     model.load_state_dict(torch.load(args.model_out, map_location=device))
     test_loss, test_acc = evaluate(model, test_loader, criterion, device)
 
