@@ -41,7 +41,7 @@ class SimpleCNNv2(nn.Module):
             nn.Dropout2d(0.3),
         )
 
-        self.gap = nn.AdaptiveAvgPool2d((1, 1))  # global avg pooling
+        self.gap = nn.AdaptiveAvgPool2d((1, 1))  
 
         self.classifier = nn.Sequential(
             nn.Linear(128, 128),
