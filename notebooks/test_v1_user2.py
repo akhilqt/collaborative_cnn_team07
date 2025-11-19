@@ -25,7 +25,7 @@ def evaluate(model, loader, device):
 if __name__ == "__main__":
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    # Transforms same as v2 eval
+    
     tf = transforms.Compose([
         transforms.Resize((256,256)),
         transforms.CenterCrop(224),
