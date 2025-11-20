@@ -68,6 +68,9 @@ collaborative_cnn_team07/
   utils/
     metrics.py
     prepare_user2_plants.py
+    check_structure.py
+    gradcam_viz.py
+    rename_check.txt
   report.md
   README.md
   requirements.txt
